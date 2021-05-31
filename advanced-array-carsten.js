@@ -59,7 +59,6 @@ console.log(array1);
 
 // 6. Sort the array based on the "number" property, with the highest number first.
 array1.sort(function (a, b) {
-  //  console.log(a);
   if (a.number < b.number) {
     return 1;
   } else if (b.number < a.number) {
@@ -75,7 +74,6 @@ console.log(array1);
 const sortedByName = array1.map(function (a) {
   return a.name;
 });
-sortedByName.join(", ");
-const stringArray = sortedByName.toString();
-const splittedLastComma = stringArray.replace("flush,", "flush and ");
+const stringArray = sortedByName.join(", ");
+const splittedLastComma = stringArray.replace("flush,", "flush and");
 console.log(splittedLastComma);
